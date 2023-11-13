@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  #sudoku-grid {
+    margin: auto;
+  }
+  
+  #sudoku-grid td {
+    border: 1px solid #000; /* Setzen Sie die Grenzen für alle Zellen */
+    width: 30px; /* Breite und Höhe der Zellen anpassen */
+    height: 30px;
+    text-align: center;
+  }
+  
+  
+  /* Hervorhebung der 3x3-Quadrate rechts */
+  #sudoku-grid td:nth-child(3n + 3) {
+    border-right: 3px solid #000; /* Rechte Seite der 3. Zelle in jeder Zeile */
+  }
+  
+  /* Hervorhebung der 3x3-Quadrate unten */
+  #sudoku-grid tr:nth-child(3n + 3) td {
+    border-bottom: 3px solid #000; /* Untere Seite der 3. Zeile in jeder 3. Zeile */
+  }
+  
+  .sudoku-cell {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #000;
+  }
+  
+  #check-solution {
+    background-color: #008CBA;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #check-solution:hover {
+    background-color: #005f7f;
+  }
+  

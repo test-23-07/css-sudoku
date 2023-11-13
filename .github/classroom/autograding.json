@@ -1,0 +1,157 @@
+{
+  "repo": "helsoc7/css-sudoku",
+  "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens sudoku.html zu erstellen mit einer HTML Tabelle für das Spielfeld.",
+  "logo_url": "sudoku.png",
+  "timeframe": "45 Minuten (Viel Erfolg!)",
+  "tests": [
+    {
+      "specs": {
+        "title": "Style das Sudoku mit CSS",
+        "list": [
+          "Füge ein Stylesheet mit dem Namen sudoku.css hinzu",
+          "Verlinke das Stylesheet in der sudoku.html-Datei"
+        ]
+      },
+      "name": "Style the sudoku with CSS",
+      "feedback": "Please add a stylesheet in the sudoku.html file",
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { return document.querySelector('link[href=\"sudoku.css\"]') !== null ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 15
+    },
+    {
+      "specs": {
+        "title": "Style den Body",
+        "list": [
+          "Setze die Schriftart für die gesamte Seite auf Arial oder eine andere sans-serif-Schriftart",
+          "Zentriere den Text",
+          "Lege die Hintergrundfarbe auf #f0f0f0 fest"
+        ]
+      },
+      "name": "Style the body of the sudoku page",
+      "feedback": "please add the font to arial or sans-serif, center the text and color the background in #f0f0f0",
+      "urls": [
+        "https://www.w3schools.com/cssref/pr_font_font-family.php",
+        "https://www.w3schools.com/cssref/pr_text_text-align.php",
+        "https://www.w3schools.com/cssref/pr_background-color.php"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { const bodyStyles = window.getComputedStyle(document.body); const fontFamily = bodyStyles.getPropertyValue('font-family').toLowerCase(); const textAlign = bodyStyles.getPropertyValue('text-align').toLowerCase(); const backgroundColor = bodyStyles.getPropertyValue('background-color').toLowerCase(); const fontFamilyMatch = fontFamily.includes('arial') || fontFamily.includes('sans-serif'); const textAlignMatch = textAlign === 'center'; const backgroundColorMatch = backgroundColor === 'rgb(240, 240, 240)' || backgroundColor === '#f0f0f0'; return fontFamilyMatch && textAlignMatch && backgroundColorMatch ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 15
+    },
+    {
+      "specs": {
+        "title": "Style das Sudoku-Grid",
+        "list": [
+          "Zentriere das Sudoku-Grid auf der Seite, indem du margin verwendest",
+          "Achte darauf, dass du in dem stylesheet mittels der id-Eigenschaft auf das sudoku-grid referenzierst!"
+        ],
+        "code-example": "#firstname {background-color: #f0f0f0;}"
+      },
+      "name": "Style the sudoku grid with auto margin",
+      "feedback": "Please style the sudoku grid with margin set to auto",
+      "urls": [
+        "https://www.w3schools.com/cssref/sel_id.php",
+        "https://www.w3schools.com/css/css_margin.asp"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { const sudokuGrid = document.querySelector('#sudoku-grid'); const computedStyles = getComputedStyle(sudokuGrid); const marginMatch = computedStyles.getPropertyValue('margin') === '0px'; return marginMatch ? 'true' : 'false'; })();",
+      "output": "true",
+      "comparison": "exact",
+      "points": 10
+    },
+    {
+      "specs": {
+        "title": "Zellenränder für das Grid setzen",
+        "list": [
+          "Passe Breite (width) und Höhe (height) der Zellen an (30px und 30px)",
+          "Zentriere den Text (text-align) in allen Zellen",
+          "Lege die Zellenränder (border) auf 1px solid #000 fest"
+        ]
+      },
+      "name": "cell border for the grid",
+      "feedback": "Please modify the width und height of the cells to 30px each. Center the text and put a border around the cells with 1px solid #000",
+      "urls": [
+        "https://www.w3schools.com/css/css_dimension.asp",
+        "https://www.w3schools.com/cssref/pr_text_text-align.php",
+        "https://www.w3schools.com/css/css_border_shorthand.asp"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { const sudokuGrid = document.querySelector('#sudoku-grid td'); const computedStyles = getComputedStyle(sudokuGrid); const borderMatch = computedStyles.getPropertyValue('border') === '1px solid rgb(0,0,0)'; const widthMatch = computedStyles.getPropertyValue('border') === '36px'; const heightMatch = computedStyles.getPropertyValue('height') === '34px'; const alignMatch = computedStyles.getPropertyValue('text-align') === 'center'; return alignMatch && heightMatch ? 'true' : 'false'; })();",
+      "output": "true",
+      "comparison": "exact",
+      "points": 15
+    },
+    {
+      "specs": {
+        "title": "Style die Zellen im Grid",
+        "list": [
+          "Setze die Breite und Höhe jeweils auf 30px",
+          "Zentriere den Text in den Zellen",
+          "Passe die Schriftgröße auf 16px an",
+          "Lege  den Zellenrand (border) auf 1px solid #000 fest"
+        ]
+      },
+      "name": "Style the cells in the grid",
+      "feedback": "Please modify height and width of the cells to 30px each. Center the text and font-size to 16px and put a border around the cells with 1px solid #000",
+      "urls": [
+        "https://www.w3schools.com/css/css_dimension.asp",
+        "https://www.w3schools.com/cssref/pr_text_text-align.php",
+        "https://www.w3schools.com/css/css_border_shorthand.asp",
+        "https://www.w3schools.com/css/css_font_size.asp"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { const sudokuCells = document.querySelectorAll('.sudoku-cell'); const stylesMatch = Array.from(sudokuCells).every(cell => { const cellStyles = getComputedStyle(cell); const widthMatch = cellStyles.getPropertyValue('width') === '30px'; const heightMatch = cellStyles.getPropertyValue('height') === '30px'; const textAlignMatch = cellStyles.getPropertyValue('text-align') === 'center'; const fontSizeMatch = cellStyles.getPropertyValue('font-size') === '16px'; const borderMatch = cellStyles.getPropertyValue('border') === '1px solid rgb(0, 0, 0)'; return widthMatch && heightMatch && textAlignMatch && fontSizeMatch && borderMatch; }); return stylesMatch ? 'true' : 'false'; })();",
+      "output": "true",
+      "comparison": "exact",
+      "points": 15
+    },
+    {
+      "specs": {
+        "title": "Styling des Buttons Lösung überprüfen",
+        "list": [
+          "Lege die Hintergrundfarbe (background-color) auf #008CBA fest",
+          "Die Schriftfarbe (color) soll #fff sein",
+          "Die Schriftgröße (font-size) soll 18px sein",
+          "Setze das Padding auf 10px 20px",
+          "Setze die border auf none",
+          "Erstelle einen Mauszeiger für den Button. Das heißt, dass du cursor auf pointer setzen sollst"
+        ],
+        "code-example": "button { cursor: pointer; }"
+      },
+      "name": "Style the button Lösung überprüfen",
+      "feedback": "Please add a background color, a color, a font-size, a padding, and no border. Add a cursor to the button",
+      "urls": [
+        "https://www.w3schools.com/cssref/pr_background-color.php",
+        "https://www.w3schools.com/css/css3_buttons.asp",
+        "https://www.w3schools.com/cssref/pr_class_cursor.php#gsc.tab=0"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { const checkSolutionButton = document.getElementById('check-solution'); const computedStyles = getComputedStyle(checkSolutionButton); const bgColorMatch = computedStyles.getPropertyValue('background-color') === 'rgb(0, 140, 186)'; const colorMatch = computedStyles.getPropertyValue('color') === 'rgb(255, 255, 255)'; const fontSizeMatch = computedStyles.getPropertyValue('font-size') === '18px'; const paddingMatch = computedStyles.getPropertyValue('padding') === '10px 20px'; const borderMatch = computedStyles.getPropertyValue('border') === 'none'; const cursorMatch = computedStyles.getPropertyValue('cursor') === 'pointer'; return bgColorMatch && colorMatch && fontSizeMatch && paddingMatch && cursorMatch ? 'true' : 'false'; })();",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Ändere die Hintergrundfarbe beim Hovern über die Schaltfläche des Buttons auf die Farbe #005f7f"
+      },
+      "name": "Modify the background color of the button",
+      "feedback": "Please modify the background color of the button when it is hovered over to #005f7f",
+      "urls": [
+        "https://www.w3schools.com/cssref/sel_hover.php"
+      ],
+      "file": "sudoku.html",
+      "javascript": "(function() { const checkSolutionButton = document.getElementById('check-solution'); const hoverStyles = checkSolutionButton.style['hover'] || getComputedStyle(checkSolutionButton, ':hover'); const bgColorMatch = hoverStyles.getPropertyValue('background-color') === 'rgb(0, 140, 186)'; return bgColorMatch ? 'true' : 'false'; })();",
+      "output": "true",
+      "comparison": "exact",
+      "points": 10
+    }
+  ]
+}
