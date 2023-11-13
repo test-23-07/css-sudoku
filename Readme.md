@@ -2,14 +2,19 @@
 
 ---
 # Aufgabe
-[![GitHub Classroom Workflow](https://github.com/helsoc7/css-sudoku/actions/workflows/classroom.yml/badge.svg)](https://github.com/helsoc7/css-sudoku/actions/workflows/classroom.yml) 
+[![GitHub Classroom Workflow](https://github.com/test-23-07/css-sudoku/actions/workflows/classroom.yml/badge.svg)](https://github.com/test-23-07/css-sudoku/actions/workflows/classroom.yml) [![Points badge](../../blob/badges/.github/badges/points.svg)](../../actions) 
 
 Eure Aufgabe ist es, eine HTML-Datei namens sudoku.html zu erstellen mit einer HTML Tabelle für das Spielfeld.
 * 100 Punkte
 * 45 Minuten (Viel Erfolg!)
 
 ---
+<p>Ladet eure Lösung bitte nicht in den .github-Ordner.  </p>
+
+---
 <ol>
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_1.svg)](../../actions)  
 <li> Style das Sudoku mit CSS (15 Punkte)</li>
 <ul><li> Füge ein Stylesheet mit dem Namen sudoku.css hinzu</li></ul>
 <ul><li> Verlinke das Stylesheet in der sudoku.html-Datei</li></ul>
@@ -17,6 +22,8 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/css/css_howto.asp">Spickzettel</a></li></ul> 
 
 ---
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_2.svg)](../../actions)  
 <li> Style den Body (15 Punkte)</li>
 <ul><li> Setze die Schriftart für die gesamte Seite auf Arial oder eine andere sans-serif-Schriftart</li></ul>
 <ul><li> Zentriere den Text</li></ul>
@@ -27,6 +34,8 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/cssref/pr_background-color.php">Spickzettel</a></li></ul> 
 
 ---
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_3.svg)](../../actions)  
 <li> Style das Sudoku-Grid (10 Punkte)</li>
 <ul><li> Zentriere das Sudoku-Grid auf der Seite, indem du margin verwendest</li></ul>
 <ul><li> Achte darauf, dass du in dem stylesheet mittels der id-Eigenschaft auf das sudoku-grid referenzierst!</li></ul>
@@ -37,6 +46,8 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/css/css_margin.asp">Spickzettel</a></li></ul> 
 
 ---
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_4.svg)](../../actions)  
 <li> Zellenränder für das Grid setzen (15 Punkte)</li>
 <ul><li> Passe Breite (width) und Höhe (height) der Zellen an (30px und 30px)</li></ul>
 <ul><li> Zentriere den Text (text-align) in allen Zellen</li></ul>
@@ -47,6 +58,8 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/css/css_border_shorthand.asp">Spickzettel</a></li></ul> 
 
 ---
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_5.svg)](../../actions)  
 <li> Style die Zellen im Grid (15 Punkte)</li>
 <ul><li> Setze die Breite und Höhe jeweils auf 30px</li></ul>
 <ul><li> Zentriere den Text in den Zellen</li></ul>
@@ -59,6 +72,8 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/css/css_font_size.asp">Spickzettel</a></li></ul> 
 
 ---
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_6.svg)](../../actions)  
 <li> Styling des Buttons Lösung überprüfen (20 Punkte)</li>
 <ul><li> Lege die Hintergrundfarbe (background-color) auf #008CBA fest</li></ul>
 <ul><li> Die Schriftfarbe (color) soll #fff sein</li></ul>
@@ -74,6 +89,8 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/cssref/pr_class_cursor.php#gsc.tab=0">Spickzettel</a></li></ul> 
 
 ---
+
+[![Test Status](../../blob/badges/.github/badges/testStatus_7.svg)](../../actions)  
 <li> Ändere die Hintergrundfarbe beim Hovern über die Schaltfläche des Buttons auf die Farbe #005f7f (10 Punkte)</li>
 Hilfe: 
 <ul><li><a href="https://www.w3schools.com/cssref/sel_hover.php">Spickzettel</a></li></ul> 
